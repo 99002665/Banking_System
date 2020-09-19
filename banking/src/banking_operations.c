@@ -140,3 +140,18 @@ int password_check(char * password){
     if(password_length < 15) return 0;
     else return 1;
 }
+
+int email_check(char *email){
+    if(strlen(email) == 0) return 0;
+    int pos = 0;
+    int count = 0;
+    while(pos <= strlen(email)){
+        if(email[pos] == '@' || email[pos] == '.')
+            count ++;
+       pos ++;
+    }
+    if( count == 2)
+     return 1
+    else
+        return 0;
+}

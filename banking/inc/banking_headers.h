@@ -19,6 +19,7 @@ int PAN_number_check(char *);
 int amount_check(int);
 int account_number_check(int);
 int password_check(char *);
+int email_check(char *);
 
 struct bank_account
 {

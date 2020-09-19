@@ -62,6 +62,11 @@ void test_banking(void) {
     CU_ASSERT( 0 == password_check(""))
     CU_ASSERT( 0 == password_check("124"))
     CU_ASSERT( 0 == password_check("74sde7as1vd4f2r"))
-
+    /* Checking for a valid email*/
+    CU_ASSERT( 0 == email_check(""))
+    CU_ASSERT( 0 == email_check("wgweq"))
+    CU_ASSERT( 0 == email_check("wgwcf@q"))
+    CU_ASSERT( 0 == email_check("kvrs."))
+    CU_ASSERT( 1 == email_check("sai@gmail.com"))
 }
 
