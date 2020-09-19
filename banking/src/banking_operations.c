@@ -151,7 +151,7 @@ int email_check(char *email){
        pos ++;
     }
     if( count == 2)
-     return 1
+     return 1;
     else
         return 0;
 }
