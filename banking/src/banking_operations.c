@@ -100,3 +100,9 @@ int logout(){
 	printf("You are currently logged out of your account\n");
 	return 1;
 }
+
+int name_check(char *name){
+    int length = strlen(name);
+    if(length > 32) return 0;
+    else retuen 1;
+}

@@ -41,6 +41,9 @@ int main() {
 /* Write all the test functions */
 void test_banking(void) {
     CU_ASSERT(1 == logout())
+    CU_ASSERT(1 == name_check("Sai lakshmi"))
+    CU_ASSERT(0 == name_check("Sai lakshmi nag venkata rama das bindu chandu shahna shilpa"))
+
   /*CU_ASSERT(1== prime(2));
    CU_ASSERT(1== prime(5));
 
