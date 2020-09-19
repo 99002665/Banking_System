@@ -8,7 +8,7 @@ SRC = main.c\
 src/banking_operations.c\
 
 # All test source files
-TEST_SRC = src/banking_operations.c\
+TEST_SRC = src/ banking_operations.c \
 test/banking_test_operations.c
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
@@ -49,3 +49,4 @@ clean:
 # Create new build folder if not present
 $(BUILD):
 	mkdir build
+
