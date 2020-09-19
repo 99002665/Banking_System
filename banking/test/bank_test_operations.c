@@ -3,7 +3,7 @@
 #include <CUnit/CUnit.h>
 
 /* Modify these two lines according to the project */
-#include <banking_headers.h>
+#include "banking_headers.h"
 #define PROJECT_NAME    "bankingsystem"
 
 /* Prototypes for all the test functions */
@@ -22,7 +22,7 @@ int main() {
 
 
   /* Add your test functions in this format for testing*/
-  CU_add_test(suite, "prime", test_banking);
+  CU_add_test(suite, "banking", test_banking);
   //CU_add_test(suite, "not prime", test_notprime);
 
 /* Note: Do not edit START*/
