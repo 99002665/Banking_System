@@ -43,7 +43,7 @@ int Create_new_account(){
 
 
 }
-void Get_Account_Info(){
+int Get_Account_Info(){
 	printf("\nPlease enter your account number : \n");
 	//int current_acc_number = 0;
 	//scanf("%d",current_acc_number);
@@ -56,7 +56,7 @@ void Get_Account_Info(){
 
 
 }
-void Deposit_Cash(){
+int Deposit_Cash(){
 	auto int acc_no;
    float add_money;
 
@@ -76,7 +76,7 @@ void Deposit_Cash(){
          break;
    }
 }
-void Withdraw_Cash(){
+int Withdraw_Cash(){
 	auto int acc_no;
    float debit_money;
 
@@ -96,6 +96,7 @@ void Withdraw_Cash(){
          break;
    }
 }
-void logout(){
+int logout(){
 	printf("You are currently logged out of your account\n");
+	return 1;
 }

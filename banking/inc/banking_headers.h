@@ -9,10 +9,10 @@
 void display();
 
 int Create_new_account();
-void Get_Account_Info();
-void Deposit_Cash();
-void Withdraw_Cash();
-void logout();
+int Get_Account_Info();
+int Deposit_Cash();
+int Withdraw_Cash();
+int logout();
 
 
 struct bank_account

@@ -40,6 +40,7 @@ int main() {
 
 /* Write all the test functions */
 void test_banking(void) {
+    CU_ASSERT(1 == logout())
   /*CU_ASSERT(1== prime(2));
    CU_ASSERT(1== prime(5));
 
