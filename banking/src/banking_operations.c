@@ -21,7 +21,7 @@ int Create_new_account(){
    //fflush(stdin);
    printf("\nEnter the account holder name    : ");
    scanf("%s", customer_name);
-   printf("\nEnter password : ")
+   printf("\nEnter password : ");
     scanf("%s", password);
    printf("\nEnter the account holder address : ");
    scanf("%s", customer_address);
