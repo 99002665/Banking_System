@@ -20,7 +20,7 @@ int Create_new_account(){
    float available_balance = 0;
    //fflush(stdin);
    printf("\nEnter the account holder name    : ");
-   scanf("%25s", customer_name)
+   scanf("%25s", customer_name);
 
 
    printf("\nEnter password : ");
