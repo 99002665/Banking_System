@@ -17,7 +17,7 @@ int Create_new_account(){
    int acc_number = rand();
    char customer_address[100];
    float available_balance = 0;
-   fflush(stdin);
+   //fflush(stdin);
    printf("\nEnter the account holder name    : ");
    scanf("%s", customer_name);
    printf("\nEnter the account holder address : ");
@@ -110,6 +110,10 @@ int name_check(char *name){
 
 int PAN_number_check(char * pannumber){
     int pan_length = strlen(pannumber);
-    if(pan_length > 10) return 0;
-    else return 1;
+    if(pan_length == 9) return 1;
+    else return 0;
+}
+
+int add_money(int amount){
+
 }
