@@ -108,7 +108,7 @@ int logout(){
 
 int name_check(char *name){
     int name_length = strlen(name);
-    if(name_length > 32) return 0;
+    if(name_length > 32 || name_length <= 0) return 0;
     else return 1;
 }
 

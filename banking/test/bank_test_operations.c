@@ -41,10 +41,13 @@ int main() {
 /* Write all the test functions */
 void test_banking(void) {
     CU_ASSERT(1 == logout())
+    CU_ASSERT(0 == logout("vdxwqe"))
     /* Checking for correct name*/
     CU_ASSERT(1 == name_check("Sai lakshmi"))
+    CU_ASSERT(1 == name_check(""))
     CU_ASSERT(0 == name_check("Sai lakshmi nag venkata rama das bindu chandu shahna shilpa"))
    /* Checking for correct PAN number*/
+    CU_ASSERT(0 == PAN_number_check(""))
     CU_ASSERT(0 == PAN_number_check("fr4156asef"))
     CU_ASSERT(1 == PAN_number_check("etjsd9641"))
 /*Checking for correct amount*/

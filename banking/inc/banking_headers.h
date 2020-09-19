@@ -5,9 +5,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-
+/* Declaration of all functions*/
 void display();
-
 int Create_new_account();
 int Get_Account_Info();
 int Deposit_Cash();
@@ -20,6 +19,8 @@ int amount_check(int);
 int account_number_check(int);
 int password_check(char *);
 int email_check(char *);
+
+
 
 struct bank_account
 {
