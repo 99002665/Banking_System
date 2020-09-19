@@ -102,7 +102,14 @@ int logout(){
 }
 
 int name_check(char *name){
-    int length = strlen(name);
-    if(length > 32) return 0;
-    else retuen 1;
+    int name_length = strlen(name);
+    if(name_length > 32) return 0;
+    else return 1;
+}
+
+
+int PAN_number_check(char * pannumber){
+    int pan_length = strlen(pannumber);
+    if(pan_length > 10) return 0;
+    else return 1;
 }

@@ -13,7 +13,9 @@ int Get_Account_Info();
 int Deposit_Cash();
 int Withdraw_Cash();
 int logout();
+
 int name_check(char *);
+int PAN_number_check(char *);
 
 struct bank_account
 {
