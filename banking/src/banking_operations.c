@@ -18,7 +18,7 @@ int Create_new_account(){
    int acc_number = rand();
    char customer_address[100];
    float available_balance = 0;
-   //fflush(stdin);
+   fflush(stdin);
    printf("\nEnter the account holder name    : ");
    scanf("%25s", customer_name);
 
