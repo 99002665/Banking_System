@@ -24,11 +24,11 @@ int Create_new_account(){
 
 
    printf("\nEnter password : ");
-    scanf("%s", password);
+    scanf("%14s", password);
    printf("\nEnter the account holder address : ");
-   scanf("%s", customer_address);
+   scanf("%99s", customer_address);
    printf("\nEnter PAN Number : ");
-   scanf("%s",PAN_number);
+   scanf("%10s",PAN_number);
 
 
    printf("\n****** YOUR DETAIlS ******\n");
@@ -38,7 +38,7 @@ int Create_new_account(){
    printf("Customer Address : %s",customer_address);
    printf("\n");
 
-   strcpy(account.customer_name,customer_name);
+   account.customer_name=customer_name;
    account.acc_number = acc_number;
    strcpy(account.PAN_number,PAN_number);
    strcpy(account.customer_address,customer_address);
