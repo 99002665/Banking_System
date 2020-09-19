@@ -14,12 +14,15 @@ void display(){
 int Create_new_account(){
    char customer_name[30];
    char PAN_number[10];
+   char password[15];
    int acc_number = rand();
    char customer_address[100];
    float available_balance = 0;
    //fflush(stdin);
    printf("\nEnter the account holder name    : ");
    scanf("%s", customer_name);
+   printf("\nEnter password : ")
+    scanf("%s", password);
    printf("\nEnter the account holder address : ");
    scanf("%s", customer_address);
    printf("\nEnter PAN Number : ");
@@ -132,3 +135,8 @@ int account_number_check(int acc_num){
 
 }
 
+int password_check(char * password){
+    int password_length = strlen(password);
+    if(password_length < 15) return 0;
+    else return 1;
+}

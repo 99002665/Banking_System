@@ -18,12 +18,14 @@ int name_check(char *);
 int PAN_number_check(char *);
 int amount_check(int);
 int account_number_check(int);
+int password_check(char *);
 
 struct bank_account
 {
 	char customer_name[30];
    char PAN_number[10];
    int acc_number;
+   char password[15];
    char customer_address[100];
    float available_balance;
 };

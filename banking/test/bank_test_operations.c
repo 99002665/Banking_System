@@ -51,11 +51,17 @@ void test_banking(void) {
     CU_ASSERT( 0 == amount_check(0))
     CU_ASSERT( 0 == amount_check(-87))
     CU_ASSERT( 1 == amount_check(52222))
+
+    /*Checking for correct account number from user*/
     CU_ASSERT( 0 == account_number_check(0))
     CU_ASSERT( 0 == account_number_check(-785))
     CU_ASSERT( 1 == account_number_check(12547))
     CU_ASSERT( 0 == account_number_check(147))
     CU_ASSERT( 0 == account_number_check(78541269))
+    /*Checking for valid password*/
+    CU_ASSERT( 0 == password_check(""))
+    CU_ASSERT( 0 == password_check("124"))
+    CU_ASSERT( 0 == password_check("74sde7as1vd4f2r"))
 
 }
 
