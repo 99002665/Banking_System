@@ -21,7 +21,7 @@ int Create_new_account(){
    //fflush(stdin);
    printf("\nEnter the account holder name    : ");
    //if(scanf("%s", customer_name)) exit(EXIT_FAILURE);
-   customer_name = gets();
+   customer_name = fgets();
 
    printf("\nEnter password : ");
     scanf("%s", password);
