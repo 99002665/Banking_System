@@ -114,6 +114,8 @@ int PAN_number_check(char * pannumber){
     else return 0;
 }
 
-int add_money(int amount){
-
+int amount_check(int amount){
+    if(amount <= 0) return 0 ;
+    else if(amount > 50,000) return 0;
+    else return 1;
 }

@@ -46,6 +46,10 @@ void test_banking(void) {
     CU_ASSERT(0 == PAN_number_check("fr4156asef"))
     CU_ASSERT(1 == PAN_number_check("etjsd9641"))
 
+    CU_ASSERT( 0 == amount_check(0))
+    CU_ASSERT( 0 == amount_check(-87))
+    CU_ASSERT( 0 == amount_check(52222))
+     CU_ASSERT(  == amount_check(8744))
   /*CU_ASSERT(1== prime(2));
    CU_ASSERT(1== prime(5));
 
