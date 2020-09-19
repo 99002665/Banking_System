@@ -17,6 +17,7 @@ int logout();
 int name_check(char *);
 int PAN_number_check(char *);
 int amount_check(int);
+int account_number_check(int);
 
 struct bank_account
 {

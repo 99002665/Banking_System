@@ -2,13 +2,13 @@
 #include <CUnit/Basic.h>
 #include <CUnit/CUnit.h>
 
-/* Modify these two lines according to the project */
+
 #include "banking_headers.h"
 #define PROJECT_NAME    "bankingsystem"
 
 /* Prototypes for all the test functions */
 void test_banking(void);
-/*void test_notprime(void);*/
+
 
 
 /* Start of the application test */
@@ -41,27 +41,21 @@ int main() {
 /* Write all the test functions */
 void test_banking(void) {
     CU_ASSERT(1 == logout())
+    /* Checking for correct name*/
     CU_ASSERT(1 == name_check("Sai lakshmi"))
     CU_ASSERT(0 == name_check("Sai lakshmi nag venkata rama das bindu chandu shahna shilpa"))
+   /* Checking for correct PAN number*/
     CU_ASSERT(0 == PAN_number_check("fr4156asef"))
     CU_ASSERT(1 == PAN_number_check("etjsd9641"))
-
+/*Checking for correct amount*/
     CU_ASSERT( 0 == amount_check(0))
     CU_ASSERT( 0 == amount_check(-87))
-    CU_ASSERT( 0 == amount_check(52222))
-     CU_ASSERT(  == amount_check(8744))
-  /*CU_ASSERT(1== prime(2));
-   CU_ASSERT(1== prime(5));
-
-     CU_ASSERT(0== prime(4));
-   CU_ASSERT(0== prime(20));
-  */
-
+    CU_ASSERT( 1 == amount_check(52222))
+    CU_ASSERT( 0 == account_number_check(0))
+    CU_ASSERT( 0 == account_number_check(-785))
+    CU_ASSERT( 1 == account_number_check(12547))
+    CU_ASSERT( 0 == account_number_check(147))
+    CU_ASSERT( 0 == account_number_check(78541269))
 
 }
 
-/*void test_notprime(void) {
- # CU_ASSERT(1 == notprime(4));
-
-
-#}*/

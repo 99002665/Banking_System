@@ -119,3 +119,16 @@ int amount_check(int amount){
     else if(amount > 50,000) return 0;
     else return 1;
 }
+
+int account_number_check(int acc_num){
+    int acc_num_len = 0;
+    if(acc_num <= 0) return 0;
+    while(acc_num > 0){
+        acc_num_len ++;
+        acc_num /= 10;
+    }
+    if (acc_num_len == 5) return 1;
+    else return 0;
+
+}
+
